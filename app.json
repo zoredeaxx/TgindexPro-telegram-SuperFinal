@@ -29,5 +29,12 @@
       "quantity": 1,
       "size": "free"
     }
+  },  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
   }
 }
