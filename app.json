@@ -52,7 +52,7 @@
 
 				"test-setup": "pip3 install -U -r requirements.txt",
 
-				"test": "python run.py"
+				"test": "python3 -m app"
 
 			}
 
