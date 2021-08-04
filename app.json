@@ -13,23 +13,10 @@
         "AUTH_USERS": {"description": "User ids of authorized users separated by space", "required": false},
         "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
   },
-  "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
   "buildpacks": [
     {"url": "heroku/python"}
   ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },  "environments": {
+"environments": {
     "test": {
       "scripts": {
         "test-setup": "python manage.py collectstatic --noinput",
