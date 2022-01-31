@@ -1,0 +1,8 @@
+name: stream
+command: python3 -m app
+environment:
+  - environment=development
+sync:
+  - app:/src
+forward:
+  - 8080:8080
